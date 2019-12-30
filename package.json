@@ -1,7 +1,6 @@
 {
   "name": "fe-webpack-config-prod",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -40,5 +39,14 @@
   ],
   "dependencies": {
     "lodash": "^4.17.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasy12/holiday-task-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vasy12/holiday-task-config/issues"
+  },
+  "homepage": "https://github.com/Vasy12/holiday-task-config#readme",
+  "description": ""
 }

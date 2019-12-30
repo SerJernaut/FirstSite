@@ -1,0 +1,46 @@
+@import 'theme.scss';
+@import 'breakpoints.scss';
+
+#pageFooter {
+  margin-top: auto;
+  text-align: center;
+  color: white;
+
+}
+
+.footerItem {
+  flex: 1;
+  margin-bottom: 80px;
+
+  h5 {
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  a {
+    border-width: 2px;
+  }
+}
+
+.footerTop {
+  background-color: #3a3e64;
+  padding-top: 50px;
+}
+
+.footerBottom {
+  background-color: #313454;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .footerContainer {
+    flex-direction: row;
+  }
+}
