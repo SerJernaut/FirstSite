@@ -1,12 +1,18 @@
-@import 'header.scss';
-@import 'footer.scss';
+@import '../css/reset.css';
+@import 'header';
+@import 'toggleMenu';
+@import 'footer';
+@import 'features';
+@import 'projects';
+@import 'download';
+
+
 *{
   box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -14,15 +20,28 @@ body {
   font-weight: 400;
 }
 
-/*
+.socialIcons, .footerItem a {
+  border: 1px solid rgb(232, 236, 238);
+  border-radius: 2px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
 
-
-*/
-a {
+a{
   text-decoration: none;
   color: inherit;
 }
 
+a:hover, a:active{
+
+  transition: background-color, color, 0.3s;
+}
+
+.overlayViewItem {
+
+}
 
 
 

@@ -1,6 +1,11 @@
-import './assets/css/reset.css';
+
 import './assets/sass/layout.scss';
 import './assets/sass/style.scss';
+import './assets/js/scrollEvent';
+import './assets/js/overlayView';
+import './assets/js/toggleMenu';
+
+
 
 
 

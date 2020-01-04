@@ -1,28 +1,19 @@
-@import 'theme.scss';
-@import 'breakpoints.scss';
+@import "theme";
+@import "breakpoints";
 
 #pageFooter {
   margin-top: auto;
-  text-align: center;
   color: white;
+  text-align: center;
+  font-size: 14px;
 
-}
 
-.footerItem {
-  flex: 1;
-  margin-bottom: 80px;
-
-  h5 {
-    text-transform: uppercase;
-    margin: 10px 0 20px;
-    font-size: 14px;
-    line-height: 1.1;
-    font-weight: 700;
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    line-height: 1.6;
   }
 
-  a {
-    border-width: 2px;
-  }
 }
 
 .footerTop {
@@ -30,17 +21,60 @@
   padding-top: 50px;
 }
 
-.footerBottom {
-  background-color: #313454;
-}
-
 .footerContainer {
   display: flex;
   flex-direction: column;
+
+
+  @media screen and (min-width: $lg) {
+    flex-direction: row;
+  }
+
 }
 
-@media screen and (min-width: 992px) {
-  .footerContainer {
-    flex-direction: row;
+.footerItem {
+  flex: 1;
+  margin-bottom: 50px;
+  @media screen and (min-width: $md){
+    margin-bottom: 80px;
+  }
+  h5 {
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+
+  li{
+    display: inline-block;
+  }
+
+  a {
+    border-width: 2px !important;
+  }
+
+  a:hover, a:active {
+    border-color: $accent-color;
+    background-color: $accent-color;
+  }
+
+
+}
+
+.footerBottom {
+  background-color: #313454;
+  padding: 20px 0;
+
+  a {
+    color: white;
+  }
+
+  a:hover{
+    color: $accent-color;
+  }
+
+  i{
+    color: $accent-color;
   }
 }

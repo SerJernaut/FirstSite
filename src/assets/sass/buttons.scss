@@ -1,0 +1,20 @@
+.btn {
+  background-color: #e84545;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  margin-bottom: 0;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background-color: #e52e2e;
+  color: #fff;
+}

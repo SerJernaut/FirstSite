@@ -1,0 +1,30 @@
+    #download{
+      margin: 100px 0;
+
+    .download-content{
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h3{
+        font-size: 28px;
+        color: #2d3033;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      p{
+        color: #2d3033;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 22.4px;
+      }
+      .btn-download{
+        margin-top: 30px;
+      }
+    ;
+  }
+    }
+

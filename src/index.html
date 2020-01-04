@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
 <section id="banner">
-    <div id="bannerContentWrapper">
-        <header id="pageHeader">
-            <div class="header-content">
+        <header id="pageHeader" class="pageHeader">
+            <div class="header-content container">
                 <a href="#" class="logo"><img src="./assets/images/logo.png" alt="logo"></a>
                 <nav class="navigation">
-                    <ul class="main-nav">
+                    <ul class="main-nav" id="main-nav">
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#works">Works</a></li>
+                        <li><a href="#projects">Works</a></li>
                         <li><a href="#teams">Our team</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#download">Download</a></li>
                     </ul>
                 </nav>
+                <div id="btn-nav-toggle" class="btn-nav-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </header>
         <div class="bannerContent">
@@ -30,15 +36,56 @@
                 nisl consectetur et.</p>
             <a href="#" class="btn">Find out more</a>
         </div>
-    </div>
+
 </section>
 
 <section id="features">
-    <div id="featuresContentWrapper">
-        <div class="">
-            <span class="icon icon-tools"></span>
+    <div id="featuresContentWrapper" class="container">
+        <div class="featureContainer">
             <div class="feature-content">
+                <div class="icon icon-tools"><img src="./assets/images/icons/01.png"></div>
+
                 <h5>Easily Customised</h5>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+        </div>
+        <div class="featureContainer">
+            <div class="feature-content">
+                <div class="icon icon-tools"><img src="./assets/images/icons/02.png"></div>
+                <h5>Responsive Ready</h5>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+        </div>
+        <div class="featureContainer">
+            <div class="feature-content">
+                <div class="icon icon-tools"><img src="./assets/images/icons/03.png"></div>
+                <h5>Modern Design</h5>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+        </div>
+        <div class="featureContainer">
+            <div class="feature-content">
+                <div class="icon icon-tools"><img src="./assets/images/icons/04.png"></div>
+                <h5>Clean Code</h5>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+        </div>
+        <div class="featureContainer">
+            <div class="feature-content">
+                <div class="icon icon-tools"><img src="./assets/images/icons/05.png"></div>
+                <h5>Ready to Ship</h5>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+        </div>
+        <div class="featureContainer">
+            <div class="feature-content">
+                <div class="icon icon-tools"><img src="./assets/images/icons/06.png"></div>
+                <h5>Download for Free</h5>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis
                     ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </div>
@@ -46,15 +93,123 @@
     </div>
 </section>
 
+<section id="projects">
+    <div id="overlayViewContainer">
+    <div class="overlayViewWindow">
+        <div id="closeOverlayViewWindow"></div>
+        <img src="" class="imgOfProject">
+    </div>
+        </div>
+    <div id="projectsWrapper" class="projectsWrapper">
+        <div class="projectContainer">
+                <img src="./assets/images/work-1.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+                <img src="./assets/images/work-2.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+             <img src="./assets/images/work-3.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+               <img src="./assets/images/work-4.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+                <img src="./assets/images/work-5.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+               <img src="./assets/images/work-6.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+                <img src="./assets/images/work-7.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+               <img src="./assets/images/work-8.jpg" alt="">
+            <div class="overlay-caption">
+                <h5>Project Name</h5>
+                <div class="spacer"></div>
+                <p>Website Design</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="download">
+    <div class="container download-content">
+            <h3>Are You Ready to Start? Download Now For Free!</h3>
+            <p>Fusce dapibus, tellus ac cursus commodo</p>
+            <a href="https://github.com/kamalcha/ActiveBox/archive/master.zip" class="btn btn-download">Download for Free</a>
+
+    </div>
+</section>
+
 <footer id="pageFooter">
     <div class="footerTop">
         <div class="container footerContainer">
-            <div class="footerItem"><h5>location</h5></div>
-            <div class="footerItem"><h5>share with love</h5></div>
-            <div class="footerItem"><h5>about activebox</h5></div>
+            <div class="footerItem">
+                <h5>location</h5>
+                <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+            </div>
+            <div class="footerItem">
+                <h5>share with love</h5>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+            <div class="footerItem">
+                <h5>about activebox</h5>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor
+                    fringilla.</p>
+            </div>
         </div>
     </div>
-    <div class="footerBottom"></div>
+
+    <div class="footerBottom">
+        <div class="container">
+            <p>Copyright © 2015 ActiveBox. All Rights Reserved<br>Made with <i class="fa fa-heart pulse"></i> by <a
+                    href="http://kamalchaneman.com/">Kamal Chaneman</a></p>
+        </div>
+    </div>
 </footer>
+
 </body>
 </html>

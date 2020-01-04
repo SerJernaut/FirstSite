@@ -1,0 +1,61 @@
+@import 'breakpoints';
+
+.navigation-open {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.primary-nav{
+  display: block;
+  position: relative;
+  top: 25%;
+  left: calc(50% - 57.5px);
+  li{
+    display: block;
+    margin-bottom: 20px;
+    a {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+      font: 25px Raleway, sans-serif;
+      font-weight: 700;
+
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+}
+
+.btn-nav-toggle {
+  display: none;
+  div{
+    width: 18px;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 3px;
+    transform-origin: left center;
+  }
+  @media screen and (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 44px;
+    z-index: 99999;
+    height: 44px;
+    overflow: hidden;
+    position: fixed;
+    top: 29px;
+    right: 10px;
+    background-color: #e84545;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
