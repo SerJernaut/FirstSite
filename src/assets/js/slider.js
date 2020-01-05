@@ -1,6 +1,5 @@
 let dataSlider = [];
 
-const sliderContainerElem = document.querySelector('.sliderContainer');
 const testimonialImgElem = document.querySelector('.testimonialImage');
 const sliderBlockquoteElem = document.getElementById('sliderBlockquote');
 const pElem = sliderBlockquoteElem.childNodes[1];

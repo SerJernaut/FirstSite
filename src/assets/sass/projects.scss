@@ -11,7 +11,7 @@
     cursor: pointer;
     overflow: hidden;
     border: 0.3px solid white;
-    transition: 0.3s padding ease-in-out, 0.3s margin-bottom ease-in-out !important;
+    transition: 0.3s padding ease-in-out, 0.3s margin-top ease-in-out !important;
     @media screen and (max-width: $lg) {
       width: 50%;
     }
@@ -38,8 +38,9 @@
         font-weight: 700;
         text-transform: uppercase;
       }
-      .spacer {
-        margin-bottom: 33%;
+      p{
+        display: block;
+        margin-top: 33%;
       }
     }
   }
@@ -52,9 +53,9 @@
   transition: 0.5s padding ease-in-out;
 }
 
-.projectContainer:hover .overlay-caption > .spacer{
-  margin-bottom: 0;
-  transition: 0.5s margin-bottom ease-in-out;
+.projectContainer:hover .overlay-caption > p{
+  margin-top: 0;
+  transition: 0.5s margin-top ease-in-out;
 }
 
 .projectContainer:hover img {
