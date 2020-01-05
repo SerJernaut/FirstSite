@@ -51,11 +51,25 @@
     z-index: 99999;
     height: 44px;
     overflow: hidden;
-    position: fixed;
-    top: 29px;
-    right: 10px;
+    position: absolute;
+    top: calc(50% - 22px);
+    right: 30px;
     background-color: #e84545;
     border-radius: 50%;
     cursor: pointer;
   }
+}
+
+.btnToggleRotate > div:first-child {
+  transform: rotate(43deg);
+  margin-left: 5px;
+}
+
+.btnToggleRotate > div:last-child {
+  transform: rotate(-43deg);
+  margin-left: 5px;
+}
+
+.btnToggleRotate > div:nth-child(2) {
+  opacity: 0;
 }

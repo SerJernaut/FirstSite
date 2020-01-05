@@ -1,12 +1,12 @@
 const projectContainerElems = document.getElementsByClassName('projectContainer');
 const closeOverlayViewWindowElem = document.getElementById('closeOverlayViewWindow');
 const overlayViewContainerElem = document.getElementById('overlayViewContainer');
+const imgOfProject = document.getElementsByClassName('imgOfProject')[0];
 
 for (let projectContainerElem of projectContainerElems) {
 
     projectContainerElem.addEventListener('click', function (event) {
         event.stopPropagation();
-        const imgOfProject = document.getElementsByClassName('imgOfProject')[0];
         imgOfProject.src = `${projectContainerElem.querySelector('img').src}`;
         onWorkClick();
     })
@@ -25,5 +25,7 @@ function onWorkClick() {
 }
 
 function closeButton() {
-    overlayViewContainerElem.style.display = 'none';
+    overlayViewContainerElem.classList.remove('overlayViewContainerOpened');
+    imgOfProject.src = null;
+    imgOfProject.alt= '';
 }

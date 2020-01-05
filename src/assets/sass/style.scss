@@ -5,7 +5,7 @@
 @import 'features';
 @import 'projects';
 @import 'download';
-
+@import 'testimonials';
 
 *{
   box-sizing: border-box;
@@ -14,7 +14,6 @@
 body {
   min-height: 100vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -39,9 +38,6 @@ a:hover, a:active{
   transition: background-color, color, 0.3s;
 }
 
-.overlayViewItem {
-
-}
 
 
 

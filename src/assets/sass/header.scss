@@ -23,7 +23,9 @@
     padding: 38.5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     transition: padding 0.3s;
-
+    @media screen and (max-width: $lg) {
+      position: relative;
+    }
     .main-nav {
 
       display: flex;
