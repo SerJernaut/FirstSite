@@ -2,9 +2,11 @@ let dataSlider = [];
 
 const testimonialImgElem = document.querySelector('.testimonialImage');
 const sliderBlockquoteElem = document.getElementById('sliderBlockquote');
-const pElem = sliderBlockquoteElem.childNodes[1];
+const aboutPersonElem = document.querySelector('.aboutPerson');
+const pElem = aboutPersonElem.childNodes[1];
 const citeElem = sliderBlockquoteElem.childNodes[3];
 const circleBtnContainerElem = sliderBlockquoteElem.childNodes[5];
+
 
 let numberOfSlide = 0;
 
@@ -35,12 +37,18 @@ circleBtnContainerElem.addEventListener('click',(e)=>{
 
 
 function showSlides(slideNum){
-
-    setTimeout(() => {
+    testimonialImgElem.classList.add('fade');
+    pElem.classList.add('fade');
+    citeElem.classList.add('fade');
+    setTimeout(()=>{
         testimonialImgElem.src = dataSlider[slideNum].img;
         pElem.innerText = dataSlider[slideNum].description;
         citeElem.innerText = dataSlider[slideNum].name;
-    }, 500);
+        testimonialImgElem.classList.remove('fade');
+        pElem.classList.remove('fade');
+        citeElem.classList.remove('fade');
+    },400)
+
     circleBtnContainerElem.childNodes.forEach(btn=>{
         btn.classList.remove('activeCircleBtn');
         if(btn.dataset.slideNum == slideNum){

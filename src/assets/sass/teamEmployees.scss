@@ -1,0 +1,90 @@
+@import 'breakpoints';
+
+.teams{
+  padding: 100px 50px;
+.teamContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: $lg) {
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: $sm) {
+    justify-content: center;
+    align-items: center;
+  }
+  .person + .person{
+    margin-left: 40px;
+    @media screen and (max-width: $lg) {
+      margin-left: 20px;
+    }
+    @media screen and (max-width: $sm) {
+      margin-left: 20px;
+    }
+  }
+  .person {
+    width: 20%;
+    @media screen and (max-width: $lg) {
+      width: calc(50%- 75px);
+    }
+    @media screen and (max-width: $sm) {
+      width: 100%;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .person-content {
+      margin-top: 20px;
+
+      h4 {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 22px;
+        color: #2d3033;
+        font-weight: 400;
+      }
+
+      h5 {
+        display: block;
+        text-align: center;
+        color: #e84545;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+        p {
+          display: block;
+          text-align: center;
+          margin-bottom: 10px;
+          font-size: 14px;
+          line-height: 22.4px;
+          color: #6c7279;
+
+      }
+    }
+  }
+}
+}
+
+.social-icons{
+  margin-top: 30px;
+  a{
+    border: 1px solid #e8ecee;
+    border-radius: 2px;
+    color: #c6cacc;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px;
+  }
+  }

@@ -24,7 +24,7 @@ function toggleMenu() {
 }
 
 mainNavElem.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === 'A' && e.target) {
         toggleMenu();
     }
 });

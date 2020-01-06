@@ -17,10 +17,14 @@
       @media screen and (max-width: $md) {
         width: 90%;
       }
-      p{
-        display: block;
-        color: #fff;
-        font: italic 36px "Cardo", Georgia, "Times New Roman", serif;
+      .aboutPerson {
+        margin-top: 20px;
+        height: 150px;
+        p {
+          display: block;
+          color: #fff;
+          font: italic 36px "Cardo", Georgia, "Times New Roman", serif;
+        }
       }
       cite{
         color: #fff;
@@ -60,7 +64,6 @@
 
     .testimonialImageContainer {
       max-width: 50%;
-      height: auto;
       overflow: hidden;
       @media screen and (max-width: $md) {
        max-width: 100%;
@@ -76,6 +79,8 @@
     }
   }
 
-
+.fade{
+  opacity: 0 !important;
+}
 
 
