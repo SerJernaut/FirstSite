@@ -9,45 +9,47 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-}
-.pageHeader {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  right: 0;
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 38.5px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    transition: padding 0.3s;
-    @media screen and (max-width: $lg) {
-      position: relative;
-    }
-    .main-nav {
+  .pageHeader {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
 
+    .header-content {
       display: flex;
       justify-content: space-between;
-      width: 538.64px;
+      align-items: center;
+      padding: 38.5px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      transition: padding 0.3s;
       @media screen and (max-width: $lg) {
-        display: none;
+        position: relative;
       }
 
-      li {
-        margin: 0;
+      .main-nav {
 
-        a {
-          text-transform: uppercase;
-          color: rgba(255, 255, 255, 0.75);
-          font: 13px Raleway, sans-serif;
-          font-weight: 700;
-
+        display: flex;
+        justify-content: space-between;
+        width: 538.64px;
+        @media screen and (max-width: $lg) {
+          display: none;
         }
 
-        a:hover {
-          color: #fff;
+        li {
+          margin: 0;
+
+          a {
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.75);
+            font: 13px Raleway, sans-serif;
+            font-weight: 700;
+
+          }
+
+          a:hover {
+            color: #fff;
+          }
         }
       }
     }

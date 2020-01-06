@@ -29,3 +29,4 @@ function closeButton() {
     imgOfProject.src = null;
     imgOfProject.alt= '';
 }
+
