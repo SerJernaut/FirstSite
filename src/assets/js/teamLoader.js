@@ -48,11 +48,11 @@ function createUserCard(employee){
     personContentElem.appendChild(ulElem);
 
     employee.contacts.forEach(contact => {
-        createSocialLinks(contact, ulElem);
+        createSocialNetworksLinks(contact, ulElem);
     });
 }
 
-function createSocialLinks(contact, elem) {
+function createSocialNetworksLinks(contact, elem) {
     const liElem = document.createElement('li');
     const aElem = document.createElement('a');
     const spanElem = document.createElement('span');
@@ -62,5 +62,5 @@ function createSocialLinks(contact, elem) {
     aElem.setAttribute('href', contact);
     aElem.appendChild(spanElem);
 
-    spanElem.setAttribute('icon', iconsMap.get(new URL(contact).hostname));
+    spanElem.setAttribute('class', iconsMap.get(new URL(contact).hostname));
 }

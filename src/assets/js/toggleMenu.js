@@ -24,7 +24,7 @@ function toggleMenu() {
 }
 
 mainNavElem.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A' && e.target) {
+    if (e.target.tagName === 'A' && navigationElem[0].classList.contains('navigation-open')) {
         toggleMenu();
     }
 });
