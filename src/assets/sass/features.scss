@@ -1,21 +1,22 @@
 @import 'breakpoints';
+@import 'scss-variables';
 
 #features {
   min-height: 728px;
-  width: 100%;
+  width: $full-size-of-parent;
   padding-top: 100px;
   #featuresContentWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 15px;
+    padding: 0 $common-value-pd-mg-wd-hg;
     .featureContainer{
       width: calc(100%/3);
       @media screen and (max-width: $lg) {
         width: 50%;
       }
       @media screen and (max-width: $md) {
-        width: 100%;
+        width: $full-size-of-parent;
       }
 
     }
@@ -32,19 +33,19 @@
           font-variant: normal;
           line-height: 1;
           width: 60px;
-          margin: 0 auto 15px;
+          margin: 0 auto $common-value-pd-mg-wd-hg;
         }
 
         h5 {
           line-height: 34px;
-          font-size: 14px;
+          font-size: $common-font-size;
           color: #2d3033;
           text-transform: uppercase;
-          font-weight: 700;
+          font-weight: $very-common-font-weight;
         }
 
         p {
-          font-size: 14px;
+          font-size: $common-font-size;
           line-height: 22.4px;
           color: #6c7279;
           margin: 0 0 10px;

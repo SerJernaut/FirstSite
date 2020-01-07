@@ -1,7 +1,9 @@
-    #download{
+@import 'scss-variables';
+
+#download{
       margin: 100px 0;
     .download-content{
-      margin: 0 15px;
+      margin: 0 $common-value-pd-mg-wd-hg;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -15,9 +17,9 @@
       }
       p{
         color: #2d3033;
-        font-weight: 600;
+        font-weight: $common-font-weight;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: $common-font-size;
         line-height: 22.4px;
       }
       .btn-download{

@@ -9,6 +9,7 @@
 @import 'testimonials';
 
 
+
 *{
   box-sizing: border-box;
 }
@@ -27,9 +28,9 @@ body {
   border: 1px solid rgb(232, 236, 238);
   border-radius: 2px;
   display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: $icons-sizes;
+  height: $icons-sizes;
+  line-height: $icons-sizes;
 }
 
 a{

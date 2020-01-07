@@ -1,11 +1,11 @@
-@import "theme";
+@import 'scss-variables';
 @import "breakpoints";
 
 #pageFooter {
   margin-top: auto;
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: $common-font-size;
 
 
   p {
@@ -41,7 +41,7 @@
   h5 {
     text-transform: uppercase;
     margin: 10px 0 20px;
-    font-weight: 700;
+    font-weight: $very-common-font-weight;
     line-height: 1.1;
   }
 

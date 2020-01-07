@@ -1,4 +1,5 @@
 @import 'breakpoints';
+@import 'scss-variables';
 
 .projectsWrapper {
   display: flex;
@@ -15,7 +16,7 @@
       width: 50%;
     }
     @media screen and (max-width: $sm) {
-      width: 100%;
+      width: $full-size-of-parent;
     }
     img{
       transition-timing-function: ease-out;
@@ -23,7 +24,7 @@
 
     }
     .overlay-caption {
-      background: #e84545;
+      background: $accent-color;
       padding-top: 33%;
       position: absolute;
       z-index: -1;
@@ -34,7 +35,7 @@
       color: white;
       text-align: center;
       h5 {
-        font-weight: 700;
+        font-weight: $very-common-font-weight;
         text-transform: uppercase;
       }
       p{
@@ -72,8 +73,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: $full-size-of-parent;
+  height: $full-size-of-parent;
   z-index: 1000;
   background: url(../images/fancybox_overlay.png);
   justify-content: center;
@@ -82,14 +83,14 @@
     position: relative;
     width: 680px;
     height: auto;
-    padding: 15px;
-    background: #fff;
+    padding: $common-value-pd-mg-wd-hg;
+    background: $wh-color;
     border-radius: 4px;
     @media screen and (max-width: $sm) {
         width: 300px;
       }
       img {
-        width: 100%;
+        width: $full-size-of-parent;
       }
     }
       #closeOverlayViewWindow {

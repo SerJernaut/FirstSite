@@ -1,9 +1,10 @@
 @import "breakpoints";
 @import 'buttons';
+@import 'scss-variables';
 
 #banner {
   min-height: 750px;
-  width: 100%;
+  width: $full-size-of-parent;
   background-image: url('../images/banner.jpg');
   background-position: center top;
   background-size: cover;
@@ -44,7 +45,7 @@
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.75);
             font: 13px Raleway, sans-serif;
-            font-weight: 700;
+            font-weight: $very-common-font-weight;
 
           }
 
@@ -62,7 +63,7 @@
     .bannerContent {
       text-align: center;
       max-width: 920px;
-      width: 100%;
+      width: $full-size-of-parent;
       margin: 148px auto;
 
       p {
@@ -82,7 +83,7 @@
           color: #fff;
           font-family: "Open Sans", sans-serif;
           font-size: 65px;
-          font-weight: 700;
+          font-weight: $very-common-font-weight;
           text-transform: uppercase;
           line-height: 1.1;
         }

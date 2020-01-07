@@ -1,6 +1,8 @@
+@import 'scss-variables';
+
 .container {
   max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
+  width: $full-size-of-parent;
+  padding: 0 $common-value-pd-mg-wd-hg;
   margin: 0 auto;
 }
