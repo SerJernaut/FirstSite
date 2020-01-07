@@ -18,6 +18,11 @@
   position: relative;
   top: 25%;
   left: calc(50% - 5vw);
+  @media screen and (max-width: $lg) {
+    left: calc(50% - 12vw);
+  }
+
+
   li{
     display: block;
     margin-bottom: 20px;
