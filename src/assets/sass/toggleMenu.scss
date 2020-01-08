@@ -11,6 +11,10 @@
   top: 0;
   left: 0;
   z-index: 99999;
+  @media screen and (min-width: $lg) {
+    display: none;
+  }
+
 }
 
 .primary-nav{
@@ -64,6 +68,7 @@
     border-radius: 50%;
     cursor: pointer;
   }
+
 }
 
 .btnToggleRotate > div:first-child {
