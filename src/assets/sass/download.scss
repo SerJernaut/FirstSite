@@ -1,0 +1,30 @@
+@import 'scss-variables';
+
+#download{
+      margin: 100px 0;
+    .download-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h3{
+        font-size: 28px;
+        color: #2d3033;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      p{
+        color: #2d3033;
+        font-weight: $common-font-weight;
+        text-transform: uppercase;
+        font-size: $common-font-size;
+        line-height: 22.4px;
+      }
+      .btn-download{
+        margin-top: 30px;
+      }
+    ;
+  }
+    }
+

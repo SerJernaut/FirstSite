@@ -1,0 +1,86 @@
+@import 'breakpoints';
+@import 'scss-variables';
+
+.sliderContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #523649;
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sliderBlockquote{
+    padding: 0 20px;
+    width: 50%;
+    display: block;
+    margin-top: 50px;
+    @media screen and (max-width: $md) {
+      width: 90%;
+    }
+    .aboutPerson {
+      margin-top: 20px;
+      height: 250px;
+      p {
+        display: block;
+        color: $wh-color;
+        font: italic 36px "Cardo", Georgia, "Times New Roman", serif;
+      }
+    }
+    cite{
+      color: $wh-color;
+      display: block;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: $common-font-weight;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+
+    .circleBtnContainer{
+      margin: 30px auto;
+      display: flex;
+      width: 40px;
+      justify-content: space-between;
+      align-items: center;
+      .circleBtn {
+        width: $common-value-pd-mg-wd-hg;
+        height: $common-value-pd-mg-wd-hg;
+        border-radius: 50%;
+        opacity: 0.3;
+        background: white;
+        cursor: pointer;
+      }
+      .circleBtn:hover{
+        opacity: 1;
+      }
+
+      .activeCircleBtn{
+        cursor: default !important;
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .testimonialImageContainer {
+    max-width: 50%;
+    overflow: hidden;
+    @media screen and (max-width: $md) {
+      max-width: $full-size-of-parent;
+    }
+    .testimonialImage {
+      opacity: 1;
+      width: $full-size-of-parent;
+      height: $full-size-of-parent;
+      object-fit: cover;
+      object-position: center;
+      transition: 0.5s opacity;
+    }
+  }
+}
+
+.fade{
+  opacity: 0 !important;
+}

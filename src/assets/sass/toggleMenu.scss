@@ -1,0 +1,83 @@
+@import 'breakpoints';
+@import 'scss-variables';
+
+.navigation-open {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+  position: fixed;
+  background-color: #000;
+  width: $full-size-of-parent;
+  height: $full-size-of-parent;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  @media screen and (min-width: $lg) {
+    display: none;
+  }
+
+}
+
+.primary-nav{
+  display: block;
+  position: relative;
+  top: 25%;
+  left: 40%;
+
+
+  li{
+    display: block;
+    margin-bottom: 20px;
+    a {
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.75);
+      font: 25px Raleway, sans-serif;
+      font-weight: $very-common-font-weight;
+
+    }
+    a:hover {
+      color: $wh-color;
+    }
+  }
+}
+
+.btn-nav-toggle {
+  display: none;
+  div{
+    width: 18px;
+    height: 3px;
+    background: $wh-color;
+    margin-bottom: 3px;
+    transform-origin: left center;
+  }
+  @media screen and (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 44px;
+    z-index: 99999;
+    height: 44px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(50% - 22px);
+    right: 10px;
+    background-color: $accent-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+}
+
+.btnToggleRotate > div:first-child {
+  transform: rotate(43deg);
+  margin-left: 5px;
+}
+
+.btnToggleRotate > div:last-child {
+  transform: rotate(-43deg);
+  margin-left: 5px;
+}
+
+.btnToggleRotate > div:nth-child(2) {
+  opacity: 0;
+}

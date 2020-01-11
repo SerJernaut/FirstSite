@@ -1,0 +1,102 @@
+@import 'breakpoints';
+@import 'scss-variables';
+
+.teams{
+  padding: 100px 50px;
+  .teamContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: $lg) {
+      justify-content: center;
+      align-items: stretch;
+    }
+    @media screen and (max-width: $sm) {
+      justify-content: center;
+      align-items: stretch;
+    }
+    .person + .person{
+      margin-left: 40px;
+      @media screen and (max-width: $lg) {
+        margin-left: 20px;
+      }
+      @media screen and (max-width: $sm) {
+        margin-left: 20px;
+      }
+    }
+    .person {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      @media screen and (max-width: $lg) {
+        width: calc(50%- 75px);
+      }
+      @media screen and (max-width: $sm) {
+        width: $full-size-of-parent;
+      }
+      img {
+        display: block;
+        max-width: $full-size-of-parent;
+        height: auto;
+        margin: 0 auto;
+      }
+      .social-icons{
+        margin-top: auto;
+        align-self: center;
+        margin-bottom: 15px;
+        display: flex;
+        li:hover a{
+          background: #E84545;
+          border-color: #E84545;
+          color: #fff;
+        }
+        li{
+          a{
+            border: 1px solid #e8ecee;
+            border-radius: 2px;
+            color: #c6cacc;
+            display: block;
+            font-size: 18px;
+            height: 40px;
+            line-height: 40px;
+            margin-right: 5px;
+            text-align: center;
+            width: 40px;
+          }
+        }
+
+      }
+
+      .person-content {
+        margin-top: 20px;
+        h4 {
+          display: block;
+          text-align: center;
+          margin-bottom: 10px;
+          font-size: 22px;
+          color: #2d3033;
+          font-weight: 400;
+        }
+
+        h5 {
+          display: block;
+          text-align: center;
+          color: #e84545;
+          font-size: 13px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+
+        p {
+          display: block;
+          text-align: center;
+          margin-bottom: 10px;
+          font-size: $common-font-size;
+          line-height: 22.4px;
+          color: #6c7279;
+        }
+
+      }
+    }
+  }
+}

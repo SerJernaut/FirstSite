@@ -1,0 +1,115 @@
+@import 'breakpoints';
+@import 'scss-variables';
+
+.projectsWrapper {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  .projectContainer {
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 0.5px solid white;
+    transition: 0.3s padding ease-in-out, 0.3s margin-top ease-in-out !important;
+    @media screen and (max-width: $lg) {
+      width: 50%;
+    }
+    @media screen and (max-width: $sm) {
+      width: $full-size-of-parent;
+    }
+    img{
+      transition-timing-function: ease-out;
+      transition-duration: 400ms;
+
+    }
+    .overlay-caption {
+      background: $accent-color;
+      padding-top: 33%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: white;
+      text-align: center;
+      h5 {
+        font-weight: $very-common-font-weight;
+        text-transform: uppercase;
+      }
+      p{
+        display: block;
+        margin-top: 33%;
+      }
+    }
+  }
+}
+
+.projectContainer:hover .overlay-caption{
+  z-index: 1;
+  opacity: 0.9;
+  padding-top: 50%;
+  transition: 0.5s padding ease-in-out;
+}
+
+.projectContainer:hover .overlay-caption > p{
+  margin-top: 0;
+  transition: 0.5s margin-top ease-in-out;
+}
+
+.projectContainer:hover img {
+  transform: scale(1.2,1.2);
+  transition-timing-function: ease-out;
+  transition-duration: 400ms;
+}
+
+.overlayViewContainer {
+  display: none;
+}
+
+.overlayViewContainerOpened{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $full-size-of-parent;
+  height: $full-size-of-parent;
+  z-index: 1000;
+  background: url(../images/fancybox_overlay.png);
+  justify-content: center;
+  align-items: center;
+  .overlayViewWindow{
+    position: relative;
+    width: 680px;
+    height: auto;
+    padding: $common-value-pd-mg-wd-hg;
+    background: $wh-color;
+    border-radius: 4px;
+    @media screen and (max-width: $sm) {
+        width: 300px;
+      }
+      img {
+        width: $full-size-of-parent;
+      }
+    }
+      #closeOverlayViewWindow {
+          cursor: pointer;
+          position: absolute;
+          top: -18px;
+          right: -18px;
+          width: 36px;
+          height: 36px;
+          background: url(../images/fancybox_sprite.png)
+      }
+  }
+
+
+
+
+
+
+
+
+
+

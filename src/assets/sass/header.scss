@@ -1,0 +1,105 @@
+@import "breakpoints";
+@import 'buttons';
+@import 'scss-variables';
+
+#banner {
+  min-height: 750px;
+  width: $full-size-of-parent;
+  background-image: url('../images/banner.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 12px;
+
+  .pageHeader {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 38.5px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      transition: padding 0.3s;
+      @media screen and (max-width: $lg) {
+        position: relative;
+      }
+
+      .main-nav {
+
+        display: flex;
+        justify-content: space-between;
+        width: 538.64px;
+        @media screen and (max-width: $lg) {
+          display: none;
+        }
+
+        li {
+          margin: 0;
+
+          a {
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.75);
+            font: 13px Raleway, sans-serif;
+            font-weight: $very-common-font-weight;
+
+          }
+
+          a:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+    .bannerContent {
+      text-align: center;
+      max-width: 920px;
+      width: $full-size-of-parent;
+      margin: 148px auto;
+
+      p {
+        color: #fff;
+        font: 22px Raleway, sans-serif;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 80px;
+      }
+
+      .heading {
+        margin-bottom: 10px;
+
+        h1 {
+          display: block;
+          padding-top: 100px;
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 65px;
+          font-weight: $very-common-font-weight;
+          text-transform: uppercase;
+          line-height: 1.1;
+        }
+      }
+    }
+
+.headerOnScroll {
+  background-color: #292c47;
+  position: fixed;
+
+  .header-content{
+    padding: 25px 0 !important;
+    transition: padding 0.3s;
+    border: none !important;
+    }
+  }
+
+
+
