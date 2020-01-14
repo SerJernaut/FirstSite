@@ -1,4 +1,4 @@
-const SCROLL_HEIGHT = 35;
+import {SCROLL_HEIGHT} from "../../constants";
 
 const headerElem = document.getElementById('pageHeader');
 window.onscroll = function() {

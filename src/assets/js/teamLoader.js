@@ -1,6 +1,6 @@
 
-const teamContainerElem = document.getElementById('teamContainer');
 
+const teamContainerElem = document.getElementById('teamContainer');
 
 let iconsMap = new Map();
 iconsMap.set('facebook.com', 'fab fa-facebook-f');
@@ -13,7 +13,7 @@ fetch('./data/employees.json').then(response => {
     return response.json();
 }).then(data => {
     data.forEach(employee => {
-        createUserCard(employee)
+        createUserCard(employee);
     });
 
 });

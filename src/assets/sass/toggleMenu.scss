@@ -11,17 +11,20 @@
   top: 0;
   left: 0;
   z-index: 99999;
-  @media screen and (min-width: $lg) {
-    display: none;
-  }
+
+
 
 }
+
+
+
 
 .primary-nav{
   display: block;
   position: relative;
   top: 25%;
   left: 40%;
+
 
 
   li{

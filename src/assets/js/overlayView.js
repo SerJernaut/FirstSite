@@ -7,6 +7,7 @@ for (let projectContainerElem of projectContainerElems) {
 
     projectContainerElem.addEventListener('click', function (event) {
         event.stopPropagation();
+
         imgOfProject.src = `${projectContainerElem.querySelector('img').src}`;
         onWorkClick();
     })
