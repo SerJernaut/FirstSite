@@ -5,6 +5,7 @@
   display: flex;
   justify-content: stretch;
   flex-wrap: wrap;
+
   .projectContainer {
     width: 25%;
     position: relative;
@@ -18,14 +19,15 @@
     @media screen and (max-width: $sm) {
       width: $full-size-of-parent;
     }
-    img{
+
+    img {
       transition-timing-function: ease-out;
       transition-duration: 400ms;
 
     }
+
     .overlay-caption {
       background: $accent-color;
-      padding-top: 33%;
       position: absolute;
       z-index: -1;
       top: 0;
@@ -33,33 +35,44 @@
       bottom: 0;
       left: 0;
       color: white;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       h5 {
+        position: absolute;
         font-weight: $very-common-font-weight;
         text-transform: uppercase;
+        margin-top: -120px;
+        transition: 0.5s;
       }
-      p{
+
+      p {
+        position: absolute;
         display: block;
-        margin-top: 33%;
+        margin-top: 120px;
+        transition: 0.5s;
       }
     }
   }
 }
 
-.projectContainer:hover .overlay-caption{
+.projectContainer:hover .overlay-caption {
   z-index: 1;
   opacity: 0.9;
-  padding-top: 50%;
   transition: 0.5s padding ease-in-out;
 }
 
-.projectContainer:hover .overlay-caption > p{
-  margin-top: 0;
-  transition: 0.5s margin-top ease-in-out;
+.projectContainer:hover .overlay-caption > h5 {
+  margin-top: -15px;
+}
+
+.projectContainer:hover .overlay-caption > p {
+  margin-top: 15px;
 }
 
 .projectContainer:hover img {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
   transition-timing-function: ease-out;
   transition-duration: 400ms;
 }
@@ -68,7 +81,7 @@
   display: none;
 }
 
-.overlayViewContainerOpened{
+.overlayViewContainerOpened {
   display: flex;
   position: fixed;
   top: 0;
@@ -79,7 +92,8 @@
   background: url(../images/fancybox_overlay.png);
   justify-content: center;
   align-items: center;
-  .overlayViewWindow{
+
+  .overlayViewWindow {
     position: relative;
     width: 680px;
     height: auto;
@@ -87,22 +101,24 @@
     background: $wh-color;
     border-radius: 4px;
     @media screen and (max-width: $sm) {
-        width: 300px;
-      }
-      img {
-        width: $full-size-of-parent;
-      }
+      width: 300px;
     }
-      #closeOverlayViewWindow {
-          cursor: pointer;
-          position: absolute;
-          top: -18px;
-          right: -18px;
-          width: 36px;
-          height: 36px;
-          background: url(../images/fancybox_sprite.png)
-      }
+
+    img {
+      width: $full-size-of-parent;
+    }
   }
+
+  #closeOverlayViewWindow {
+    cursor: pointer;
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    background: url(../images/fancybox_sprite.png)
+  }
+}
 
 
 

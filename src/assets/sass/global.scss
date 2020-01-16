@@ -1,0 +1,37 @@
+@import 'breakpoints';
+@import 'scss-variables';
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.socialIcons, .footerItem a {
+  border: 1px solid rgb(232, 236, 238);
+  border-radius: 2px;
+  display: block;
+  width: $icons-sizes;
+  height: $icons-sizes;
+  line-height: $icons-sizes;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active{
+
+  transition: background-color, color, 0.3s;
+}
+
