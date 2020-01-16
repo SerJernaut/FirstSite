@@ -29,8 +29,8 @@
         position: relative;
       }
 
-      .main-nav {
 
+      .main-nav {
         display: flex;
         justify-content: space-between;
         width: 538.64px;
@@ -93,11 +93,13 @@
 .headerOnScroll {
   background-color: #292c47;
   position: fixed;
+  scroll: smooth;
 
   .header-content{
     padding: 25px 0 !important;
     transition: padding 0.3s;
     border: none !important;
+    scroll: smooth;
     }
   }
 

@@ -2,40 +2,53 @@
 @import 'scss-variables';
 
 .navigation-open {
-  opacity: 0.9;
-  transition: opacity 0.5s;
-  position: fixed;
-  background-color: #000;
-  width: $full-size-of-parent;
-  height: $full-size-of-parent;
-  top: 0;
-  left: 0;
-  z-index: 99999;
+
+  @media screen and (max-width: $lg) {
+    opacity: 0.9;
+    transition: opacity 0.5s;
+    position: fixed;
+    background-color: #000;
+    width: $full-size-of-parent;
+    height: $full-size-of-parent;
+    top: 0;
+    left: 0;
+    z-index: 99999;
 
 
-
+  }
 }
 
 
 
-
 .primary-nav{
-  display: block;
-  position: relative;
-  top: 25%;
-  left: 40%;
 
-
-
+  @media screen and (max-width: $lg){
+    position: relative;
+    top: 25%;
+    left: 40%;
+  }
+  @media screen and (min-width: $lg){
+    display: flex;
+    justify-content: space-between;
+    width: 538.64px;
+  }
   li{
     display: block;
     margin-bottom: 20px;
+    @media screen and (min-width: $lg){
+      margin: 0;
+    }
     a {
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.75);
       font: 25px Raleway, sans-serif;
       font-weight: $very-common-font-weight;
-
+      @media screen and (min-width: $lg) {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.75);
+        font: 13px Raleway, sans-serif;
+        font-weight: $very-common-font-weight;
+      }
     }
     a:hover {
       color: $wh-color;

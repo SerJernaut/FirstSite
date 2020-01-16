@@ -31,14 +31,20 @@ export function appendById (id, child) {
     document.getElementById( id ).appendChild( child );
 }
 
-export function createClassifiedElem (elemTag, className) {
-    const elem = document.createElement(elemTag);
-    elem.classList.add(className);
+export function createTextElem(elemName, text) {
+    const elem = document.createElement(elemName);
+    elem.innerText = text;
     return elem;
 }
 
-export function removeClassById(elemId, className) {
-    const elem = document.getElementById(elemId);
-    elem.classList.remove(className);
-    return elem;
+export function addClassForEachElem(elementsList, className) {
+    elementsList.forEach(elem => {
+        elem.classList.add(className);
+    });
+}
+
+export function removeClassForEachElem(elementsList, className) {
+    elementsList.forEach(elem => {
+        elem.classList.remove(className);
+    });
 }

@@ -1,5 +1,6 @@
 import createPicture from '../../../Picture';
 import createSocialNetworksLinksList from '../../../СontactsList';
+import {createTextElem} from "../../../../utils";
 
 export default function (employee) {
     const teamItemElem = document.createElement('div');
@@ -17,9 +18,5 @@ export default function (employee) {
     return teamItemElem;
 }
 
-function createTextElem(elemName, text) {
-    const elem = document.createElement(elemName);
-    elem.innerText = text;
-    return elem;
-}
+
 
